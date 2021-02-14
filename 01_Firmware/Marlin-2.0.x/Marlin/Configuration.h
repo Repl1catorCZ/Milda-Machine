@@ -131,7 +131,7 @@
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
-#define CUSTOM_MACHINE_NAME "Milda machine"
+#define CUSTOM_MACHINE_NAME "Milachine"
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like https://www.uuidgenerator.net/version4
@@ -715,7 +715,6 @@
 
 // Check for stuck or disconnected endstops during homing moves.
 //#define DETECT_BROKEN_ENDSTOP
-
 //=============================================================================
 //============================== Movement Settings ============================
 //=============================================================================
@@ -741,7 +740,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 38, 38, 200, 219.4 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 39.9, 38.9, 200, 199.4 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1131,7 +1130,7 @@
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE
 #define Y_MAX_POS Y_BED_SIZE
-#define Z_MAX_POS 300
+#define Z_MAX_POS 300 //predelat na 350 mozno
 
 /**
  * Software Endstops
